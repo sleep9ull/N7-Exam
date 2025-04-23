@@ -10,6 +10,7 @@
 		8AB1741D2DB677EA00C8AB1F /* VLCKitSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 8AB1741C2DB677EA00C8AB1F /* VLCKitSPM */; };
 		8AB1743A2DB6909400C8AB1F /* AMSMB2 in Frameworks */ = {isa = PBXBuildFile; productRef = 8AB174392DB6909400C8AB1F /* AMSMB2 */; };
 		8AB174462DB697D100C8AB1F /* AMSMB2 in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 8AB174392DB6909400C8AB1F /* AMSMB2 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8AC35B6C2DB90BBC0005FE39 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8AC35B6B2DB90BBC0005FE39 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		8AAD20862DB52DB6003B77CB /* N7-Exam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "N7-Exam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AC35B6B2DB90BBC0005FE39 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -67,6 +69,7 @@
 		8AAD207D2DB52DB6003B77CB = {
 			isa = PBXGroup;
 			children = (
+				8AC35B6B2DB90BBC0005FE39 /* README.md */,
 				8AAD20882DB52DB6003B77CB /* N7-Exam */,
 				8AAD20872DB52DB6003B77CB /* Products */,
 			);
@@ -151,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC35B6C2DB90BBC0005FE39 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
