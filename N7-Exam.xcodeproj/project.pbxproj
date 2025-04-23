@@ -6,13 +6,46 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8AB1741D2DB677EA00C8AB1F /* VLCKitSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 8AB1741C2DB677EA00C8AB1F /* VLCKitSPM */; };
+		8AB1743A2DB6909400C8AB1F /* AMSMB2 in Frameworks */ = {isa = PBXBuildFile; productRef = 8AB174392DB6909400C8AB1F /* AMSMB2 */; };
+		8AB174462DB697D100C8AB1F /* AMSMB2 in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 8AB174392DB6909400C8AB1F /* AMSMB2 */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8AB174472DB697D100C8AB1F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8AB174462DB697D100C8AB1F /* AMSMB2 in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8AAD20862DB52DB6003B77CB /* N7-Exam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "N7-Exam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8AB1742B2DB67A9C00C8AB1F /* Exceptions for "N7-Exam" folder in "N7-Exam" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8AAD20852DB52DB6003B77CB /* N7-Exam */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8AAD20882DB52DB6003B77CB /* N7-Exam */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8AB1742B2DB67A9C00C8AB1F /* Exceptions for "N7-Exam" folder in "N7-Exam" target */,
+			);
 			path = "N7-Exam";
 			sourceTree = "<group>";
 		};
@@ -23,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AB1743A2DB6909400C8AB1F /* AMSMB2 in Frameworks */,
+				8AB1741D2DB677EA00C8AB1F /* VLCKitSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +90,7 @@
 				8AAD20822DB52DB6003B77CB /* Sources */,
 				8AAD20832DB52DB6003B77CB /* Frameworks */,
 				8AAD20842DB52DB6003B77CB /* Resources */,
+				8AB174472DB697D100C8AB1F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -65,6 +101,8 @@
 			);
 			name = "N7-Exam";
 			packageProductDependencies = (
+				8AB1741C2DB677EA00C8AB1F /* VLCKitSPM */,
+				8AB174392DB6909400C8AB1F /* AMSMB2 */,
 			);
 			productName = "N7-Exam";
 			productReference = 8AAD20862DB52DB6003B77CB /* N7-Exam.app */;
@@ -94,6 +132,10 @@
 			);
 			mainGroup = 8AAD207D2DB52DB6003B77CB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8AB1741B2DB677EA00C8AB1F /* XCRemoteSwiftPackageReference "vlckit-spm" */,
+				8AB174382DB6909400C8AB1F /* XCRemoteSwiftPackageReference "AMSMB2" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8AAD20872DB52DB6003B77CB /* Products */;
 			projectDirPath = "";
@@ -256,11 +298,14 @@
 				DEVELOPMENT_TEAM = 95BVU9V825;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "N7-Exam/Info.plist";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +329,14 @@
 				DEVELOPMENT_TEAM = 95BVU9V825;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "N7-Exam/Info.plist";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +372,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8AB1741B2DB677EA00C8AB1F /* XCRemoteSwiftPackageReference "vlckit-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tylerjonesio/vlckit-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.6.0;
+			};
+		};
+		8AB174382DB6909400C8AB1F /* XCRemoteSwiftPackageReference "AMSMB2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amosavian/AMSMB2.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8AB1741C2DB677EA00C8AB1F /* VLCKitSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AB1741B2DB677EA00C8AB1F /* XCRemoteSwiftPackageReference "vlckit-spm" */;
+			productName = VLCKitSPM;
+		};
+		8AB174392DB6909400C8AB1F /* AMSMB2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AB174382DB6909400C8AB1F /* XCRemoteSwiftPackageReference "AMSMB2" */;
+			productName = AMSMB2;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8AAD207E2DB52DB6003B77CB /* Project object */;
 }
